@@ -3,7 +3,7 @@ SQL Server Maintenance Queries
 
 
 
-ind out SQL server version
+find out SQL server version
 SELECT SERVERPROPERTY('productversion') as Version, SERVERPROPERTY ('productlevel') as Level, SERVERPROPERTY ('edition') as Edition, @@servername 'Server Name', substring(@@version,1,charindex('-',@@version)-1) +convert(varchar(100),SERVERPROPERTY('edition'))+ ' '+ +convert(varchar(100),SERVERPROPERTY('productlevel'))'Server Version'
 
 
